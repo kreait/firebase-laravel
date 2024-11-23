@@ -21,7 +21,7 @@
     "require-dev": {
         "orchestra/testbench": "^9.0",
         "laravel/pint": "^1.14",
-        "phpunit/phpunit": "^9.6.17 || ^10.5.13"
+        "phpunit/phpunit": "^11.4.3"
     },
     "autoload": {
         "psr-4": {

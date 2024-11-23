@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <phpunit
-        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-        xsi:noNamespaceSchemaLocation="./vendor/phpunit/phpunit/phpunit.xsd"
-        beStrictAboutOutputDuringTests="true"
-        colors="true"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="./vendor/phpunit/phpunit/phpunit.xsd"
+    beStrictAboutOutputDuringTests="true"
+    colors="true"
 >
     <testsuites>
         <testsuite name="Test Suite">
@@ -11,14 +11,14 @@
         </testsuite>
     </testsuites>
 
-    <coverage ignoreDeprecatedCodeUnits="true" processUncoveredFiles="true">
+    <source>
         <include>
-            <directory suffix=".php">src</directory>
+            <directory>src</directory>
         </include>
         <exclude>
             <directory>src/Facades</directory>
         </exclude>
-    </coverage>
+    </source>
 
     <php>
         <ini name="date.timezone" value="UTC"/>
