@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## Unreleased
+
+* Dropped support for Laravel 9 and 10
+
 ## 5.10.0 - 2024-11-22
 
 * Added support for PHP 8.4
