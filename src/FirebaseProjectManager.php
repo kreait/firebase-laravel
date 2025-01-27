@@ -60,7 +60,7 @@ class FirebaseProjectManager
 
     protected function configure(string $name): FirebaseProject
     {
-        $factory = new Factory();
+        $factory = new Factory;
 
         $config = $this->configuration($name);
 

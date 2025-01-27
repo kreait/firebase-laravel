@@ -5,15 +5,14 @@ declare(strict_types=1);
 namespace Kreait\Laravel\Firebase\Tests;
 
 use Kreait\Firebase;
+use PHPUnit\Framework\Attributes\Test;
 
 /**
  * @internal
  */
 final class ServiceProviderTest extends TestCase
 {
-    /**
-     * @test
-     */
+    #[Test]
     public function it_provides_components(): void
     {
         $this->app->config->set('firebase.projects.app.credentials', \realpath(__DIR__.'/_fixtures/service_account.json'));
@@ -27,9 +26,7 @@ final class ServiceProviderTest extends TestCase
         $this->assertInstanceOf(Firebase\Contract\Storage::class, $this->app->make(Firebase\Contract\Storage::class));
     }
 
-    /**
-     * @test
-     */
+    #[Test]
     public function it_does_not_provide_optional_components(): void
     {
         $this->expectException(\Throwable::class);
